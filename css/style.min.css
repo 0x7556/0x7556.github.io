@@ -1,0 +1,397 @@
+@import url("https://chinese-fonts-cdn.deno.dev/packages/lywkpmydb/dist/LXGWWenKaiScreen/result.css");
+
+:root {
+    --color-dark: #1a1a1a;
+    --color-light: #F9F9F9;
+    --color-primary: #1a8fe3;
+    --size-step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+    --size-step-1: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+    --size-step-2: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+    --size-step-3: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+    --size-step-4: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+    --spacing: 1.2rem;
+    --font-stack: 'LXGW WenKai Screen', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --code-background-color: var(--color-dark);
+    --code-color: var(--color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-dark: #fafafa;
+        --color-light: #1a1a1a;
+    }
+}
+
+body {
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: var(--spacing) clamp(calc(var(--spacing) / 2), 5vw, calc(var(--spacing) * 3));
+    font-family: var(--font-stack);
+    font-size: var(--size-step-1);
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 65ch;
+    margin-inline: auto;
+}
+
+header {
+    padding-bottom: var(--spacing);
+}
+
+main {
+    flex: 1;
+    padding-bottom: calc(var(--spacing) * 2);
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+article a {
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--color-primary) !important;
+    text-decoration-color: var(--color-primary) !important;
+    text-decoration-thickness: 0.2ex !important;
+    text-underline-offset: 0.3ex !important;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 800;
+    line-height: 1.3;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: var(--size-step-4);
+    max-width: 24ch;
+}
+
+h2 {
+    font-size: var(--size-step-3);
+    max-width: 32ch;
+}
+
+h3 {
+    font-size: var(--size-step-2);
+}
+
+h4 {
+    font-size: var(--size-step-1);
+}
+
+h5 {
+    font-size: var(--size-step-0);
+}
+
+ul, ol {
+    padding-inline-start: var(--spacing);
+}
+
+li {
+    margin-block-start: var(--spacing);
+}
+
+blockquote {
+    padding-inline-start: var(--spacing);
+    border-inline-start: 0.3em solid;
+    font-style: italic;
+    font-size: var(--size-step-1);
+    margin: 0;
+    width: 100%;
+    background: #e9e9e9;
+}
+
+content > div > * {
+    margin-block-start: var(--spacing);
+}
+
+:is(h1, h2, h3, h4, h5, blockquote) {
+    --flow-space: calc(var(--spacing) * 2);
+    word-break: break-all;
+}
+
+:is(h1, h2, h3, h4, h5) + * {
+    --flow-space: calc(var(--spacing) / 3);
+}
+
+:is(h1, h2, h3, h4, h5) + :where(h2, h3, h4, h5) {
+    --flow-space: calc(var(--spacing) * 2);
+}
+
+.title {
+    text-decoration: none;
+    font-size: var(--size-step-2);
+}
+
+.subtitle {
+    padding: 0;
+    margin: 0;
+    color: gray;
+    font-size: var(--size-step-0);
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+}
+
+button {
+    margin-left: 10px;
+    border-radius: 10px;
+    color: #4d4d4d;
+    background: var(--color-light);
+    border: 0px;
+    font-size: 18px;
+    padding: 10px 20px;
+    box-shadow: -5px -5px 15px #AAA, 5px 5px 15px #EEE;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:hover{
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px white;
+}
+
+button:active{
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px white;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    list-style: none;
+}
+
+.thumbnail {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.article-item {
+    position: relative; 
+    width: calc(33.33% - 20px);
+    padding: 0;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    color: white;
+    margin: 10px;
+}
+
+.article-item a {
+    border-radius: 10px;
+    display: block;
+    color: inherit;
+}
+
+.article-item img {
+    border-radius: 10px;
+}
+
+.article-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.article-info time {
+    font-size: 0.8rem;
+}
+
+.article-info span {
+    font-size: var(--size-step-0);
+}
+
+ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+}
+
+ul.blog-posts li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+time {
+    font-style: normal;
+    font-family: "monospace";
+    margin-right: 0.5em;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+code, .highlight, .code {
+    font-family: var(--font-stack);
+    font-size: 0.9em;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin: 0 3px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+code {
+	padding:2px 3px;
+}
+pre code{
+	padding:3px 0px;
+}
+
+pre {
+    font-family: var(--font-stack);
+    border-radius: 3px;
+    padding: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    font-size: 0.8em;
+    background-color: var(--code-background-color);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.gallery figure {
+    margin: 0;
+    position: relative;
+}
+
+.photo-title {
+    font-weight: bold;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.photo-date {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.gallery-item img {
+    border-radius: 10px;
+    min-height: 400px;
+}
+
+@media (max-width: 768px) {
+    .article-item {
+        width: calc(50% - 20px);
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .gallery-item img {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-item {
+        width: 100%;
+    }
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+    align-content: flex-end;
+    border-radius: 10px;
+}
+
+.article-item:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px white;
+}
+
+.article-item:active {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3) inset, -5px -5px 10px white inset;
+}
+
+.article-image {
+    position: relative;
+    display: inline-block; /* 确保宽度跟随内容 */
+    border-radius: 10px;
+}
+
+.article-image img {
+    border-radius: 10px;
+    height: auto;
+    display: block; /* 使图片为块级元素，以消除底部空白 */
+}
+
+.image-info {
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px; /* 仍然保持左右边距 */
+    width: calc(100% - 20px); /* 确保信息区域宽度适应 */
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px 10px 10px 15px;
+}
+
+.image-title {
+    display: block;
+    font-size: calc(var(--size-step-0));
+}
+
+.image-alt {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.image-alt .image-title {
+    padding: 0;
+    margin: 0;
+    color: #606060;
+}
