@@ -34,13 +34,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>18K软件下载</title>
+    <title>18K原创工具软件下载</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             background-image: url('../img/bg.png');
-            background-repeat: repeat;
+            background-repeat: repeat; 
             margin: 0;
             padding: 0;
             color: #333;
@@ -55,42 +55,53 @@
         h1 {
             color: #9b59b6; 
             text-align: center;
-            margin-bottom: 40px;
         }
 
-        .nav-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 25px;
-            margin-bottom: 40px;
+        h2 {
+            color: #2c3e50;
+            text-align: center;
         }
 
-        .nav-card {
+        .tool-card {
             background-color: white;
             border-radius: 8px;
             padding: 20px;
-            width: 180px;
-            text-align: center;
+            margin: 20px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: #333;
         }
 
-        .nav-card:hover {
+        .tool-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .nav-card h3 {
+        .tool-card h3 {
             color: #FF6F00;
-            font-size: 18px;
-            margin: 0;
         }
 
-        .nav-card:hover h3 {
-            color: #2980b9;
+        .tool-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .btn-download {
+            background-color: #1ABC9C !important;
+            color: #FFFFFF !important;
+            padding: 8px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #FF6F00 !important;
+            transform: translateY(-3px) !important;
         }
 
         .section-title {
@@ -99,38 +110,29 @@
             margin-bottom: 20px;
             color: #2980b9;
         }
+
+        .section-content {
+            text-align: center;
+            font-size: 18px;
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1><a href="/" style="text-decoration: none; color: inherit;">18K软件 导航</a></h1>
+        <h1><a href="/" style="text-decoration: none; color: inherit;">18K软件 装机工具</a></h1>
 
-        <div class="nav-cards">
-            <a href="18k.html" class="nav-card">
-                <h3>18K软件</h3>
-            </a>
-            <a href="/ai" class="nav-card">
-                <h3>AI工具</h3>
-            </a>
-            <a href="install.html" class="nav-card">
-                <h3>装机工具</h3>
-            </a>
-            <a href="hack.html" class="nav-card">
-                <h3>黑客工具</h3>
-            </a>
-            <a href="practical.html" class="nav-card">
-                <h3>实用工具</h3>
-            </a>
-            <a href="whois.html" class="nav-card">
-                <h3>Whois工具</h3>
-            </a>
-            <a href="os.html" class="nav-card">
-                <h3>操作系统</h3>
-            </a>
-            <a href="/code" class="nav-card">
-                <h3>编程工具</h3>
-            </a>
+        <div class="tool-card">
+            <h3>大白菜</h3>
+            <p>一款常用的系统安装和备份工具，支持制作启动U盘。</p>
+            <a href="http://www.dabaicai.com/" class="btn-download" target="_blank">大白菜官网</a>
+        </div>
+
+        <div class="tool-card">
+            <h3>老毛桃</h3>
+            <p>另一款流行的系统安装和备份工具，提供多种系统恢复和安装功能。</p>
+            <a href="http://www.laomaotao.com/" class="btn-download" target="_blank">老毛桃官网</a>
         </div>
 
     </div>

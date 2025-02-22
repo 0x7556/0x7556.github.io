@@ -1202,9 +1202,9 @@ label.el-checkbox {
   display: inline-block;
 }
 .breadcrumb>li+li:before {
-  padding: 0 5px;
+  padding: 2 3px;
   color: #ccc;
-  content: "&\00a0";
+  content: " \00000a";
 }
 .breadcrumb>.active {
   color: #777;
