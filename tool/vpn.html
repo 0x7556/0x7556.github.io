@@ -34,13 +34,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>18K软件下载</title>
+    <title>18K原创工具软件下载</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             background-image: url('../img/bg.png');
-            background-repeat: repeat;
+            background-repeat: repeat; 
             margin: 0;
             padding: 0;
             color: #333;
@@ -55,43 +55,66 @@
         h1 {
             color: #9b59b6; 
             text-align: center;
-            margin-bottom: 40px;
         }
 
-        .nav-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 25px;
-            margin-bottom: 40px;
+        h2 {
+            color: #2c3e50;
+            text-align: center;
         }
 
-        .nav-card {
+        .tool-card {
             background-color: white;
             border-radius: 8px;
             padding: 20px;
-            width: 180px;
-            text-align: center;
+            margin: 20px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: #333;
         }
 
-        .nav-card:hover {
+        .tool-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .nav-card h3 {
+        .tool-card h3 {
             color: #FF6F00;
-            font-size: 18px;
-            margin: 0;
         }
 
-        .nav-card:hover h3 {
-            color: #2980b9;
+        .tool-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
         }
+
+        .btn-download {
+            background-color: #1ABC9C !important;
+            color: #FFFFFF !important;
+            padding: 8px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #FF6F00 !important;
+            transform: translateY(-3px) !important;
+        }
+
+.btn-container {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.btn-container .btn-download {
+    text-align: center;
+    flex: 0 0 auto; 
+}
+
 
         .section-title {
             text-align: center;
@@ -99,59 +122,52 @@
             margin-bottom: 20px;
             color: #2980b9;
         }
+
+        .section-content {
+            text-align: center;
+            font-size: 18px;
+            color: #2c3e50;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1><a href="/" style="text-decoration: none; color: inherit;">18K软件</a></h1>
+        <h1><a href="javascript:history.back()" style="text-decoration: none; color: inherit;">18K软件 VPN工具</a></h1>
 
-        <div class="nav-cards">
-            <a href="18k.html" class="nav-card">
-                <h3>18K工具</h3>
-            </a>
-            <a href="/ai" class="nav-card">
-                <h3>AI工具</h3>
-            </a>
-            <a href="install.html" class="nav-card">
-                <h3>装机工具</h3>
-            </a>
-            <a href="/hack" class="nav-card">
-                <h3>黑客工具</h3>
-            </a>
-            <a href="practical.html" class="nav-card">
-                <h3>实用工具</h3>
-            </a>
-            <a href="web/whois.html" class="nav-card">
-                <h3>Whois查询</h3>
-            </a>
-            <a href="os.html" class="nav-card">
-                <h3>操作系统</h3>
-            </a>
-            <a href="/code" class="nav-card">
-                <h3>编程工具</h3>
-            </a>
+<div class="tool-card">
+    <h3>FortiClient</h3>
+    <p>FortiClient 是 Fortinet 提供的安全 VPN 客户端，支持远程安全连接，保护您的网络通信安全。</p>
+    <a href="https://filestore.fortinet.com/forticlient/FortiClientOnlineInstaller.exe" class="btn-download" target="_blank">官方下载</a>
+</div>
 
-            <a href="/official" class="nav-card">
-                <h3>官方软件</h3>
-            </a>
-            <a href="/official" class="nav-card">
-                <h3>装机必备</h3>
-            </a>
-            <a href="web/img.html" class="nav-card">
-                <h3>图像处理</h3>
-            </a>
-            <a href="web/share.html" class="nav-card">
-                <h3>文件共享</h3>
-            </a>
-            <a href="vpn.html" class="nav-card">
-                <h3>VPN工具</h3>
-            </a>
-            <a href="18k.html" class="nav-card">
-                <h3>设备</h3>
-            </a>
+<div class="tool-card">
+    <h3>OpenVPN</h3>
+    <p>OpenVPN 是一个开源的 VPN 软件，支持安全的远程连接。提供客户端和服务端下载。</p>
+    <div class="btn-container">
+        <a href="https://openvpn.net/community-downloads/" class="btn-download" target="_blank">客户端下载</a>
+        <a href="https://openvpn.net/community-downloads/" class="btn-download" target="_blank">服务端下载</a>
+    </div>
+</div>
 
-        </div>
+<div class="tool-card">
+    <h3>SoftEther</h3>
+    <p>SoftEther VPN 是一款多功能的开源 VPN 解决方案，提供稳定的客户端和服务端下载。</p>
+    <div class="btn-container">
+        <a href="https://www.softether-download.com/en.aspx" class="btn-download" target="_blank">客户端下载</a>
+        <a href="https://www.softether-download.com/en.aspx" class="btn-download" target="_blank">服务端下载</a>
+    </div>
+</div>
+
+<div class="tool-card">
+    <h3>WireGuard</h3>
+    <p>WireGuard 是一种现代化、高效且安全的 VPN 协议，适用于快速的远程连接。</p>
+    <div class="btn-container">
+        <a href="https://www.wireguard.com/install/" class="btn-download" target="_blank">客户端下载</a>
+        <a href="https://www.wireguard.com/install/" class="btn-download" target="_blank">服务端下载</a>
+    </div>
+</div>
+
 
     </div>
 
