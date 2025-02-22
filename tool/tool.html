@@ -80,20 +80,27 @@ h1 {
             margin: 10px 0;
         }
 
-        .btn-download {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-            margin-top: 10px;
-            transition: background-color 0.3s ease;
-        }
+/* 默认按钮背景色和文字颜色 */
+.btn-download {
+    display: inline-block;
+    background-color: #1ABC9C;  /* 新的时尚背景色 */
+    color: #FFFFFF;  /* 白色文字 */
+    padding: 12px 24px;
+    border-radius: 6px;  /* 适度圆角 */
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;  /* 加粗文字 */
+    text-transform: uppercase;  /* 字母大写 */
+    letter-spacing: 1px;  /* 字母间距 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 添加按钮动画 */
+}
 
-        .btn-download:hover {
-            background-color: #2980b9;
-        }
+/* 鼠标经过时背景色变化 */
+.btn-download:hover {
+    background-color: #FF6F00;  /* 爱马橙色 */
+    transform: translateY(-3px);  /* 轻微向上浮动 */
+}
+
 
         .section-title {
             text-align: center;
