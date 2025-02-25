@@ -98,6 +98,7 @@ hr {
   position: relative;
   padding: 8px;
   background: linear-gradient(135deg, #f0f4f8, #e0e7ef);
+  top: 12px;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   margin: 20px auto;
