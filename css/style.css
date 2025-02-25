@@ -105,14 +105,14 @@ hr {
 }
 .replay-btn {
   background-color: #4b5e7b; /* 按钮背景色 */
-  width: 45px; /* 按钮宽度 */
-  height: 45px; /* 按钮高度 */
+  width: 50px; /* 按钮宽度，适当减小 */
+  height: 30px; /* 按钮高度，适当减小 */
   color: #fff; /* 按钮文字颜色 */
-  line-height: 45px; /* 文字垂直居中 */
+  line-height: 30px; /* 文字垂直居中 */
   text-align: center; /* 文字水平居中 */
-  border-radius: 50%; /* 圆形按钮 */
+  border-radius: 5px; /* 可选：设置小的圆角 */
   position: absolute; /* 绝对定位 */
-  top: 20px; /* 距离顶部的距离 */
+  top: 15px; /* 距离顶部的距离 */
   left: 20px; /* 距离左侧的距离 */
   z-index: 10; /* 确保在其他元素之上 */
   transition: background-color 0.3s, transform 0.3s; /* 动画效果 */
