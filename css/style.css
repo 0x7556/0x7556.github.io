@@ -1,5 +1,5 @@
 body {
-  background-color: #3a3e4a;
+  background: linear-gradient(135deg, #37474f, #2c3e50);
   color: #d2d2d2;
   font-weight: 400;
   font-size: 14px;
@@ -97,39 +97,48 @@ hr {
 .posts {
   position: relative;
   padding: 30px;
-  background: linear-gradient(135deg, #f0f4f8, #e0e7ef);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   margin: 20px auto;
   max-width: 800px;
 }
 .replay-btn {
-  background-color: #4b5e7b;
-  width: 45px;
-  color: #fff;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: #4b5e7b; /* 按钮背景色 */
+  width: 45px; /* 按钮宽度 */
+  height: 45px; /* 按钮高度 */
+  color: #fff; /* 按钮文字颜色 */
+  line-height: 45px; /* 文字垂直居中 */
+  text-align: center; /* 文字水平居中 */
+  border-radius: 50%; /* 圆形按钮 */
+  position: absolute; /* 绝对定位 */
+  top: 20px; /* 距离顶部的距离 */
+  left: 20px; /* 距离左侧的距离 */
+  z-index: 10; /* 确保在其他元素之上 */
+  transition: background-color 0.3s, transform 0.3s; /* 动画效果 */
+/* 鼠标悬停效果 */
+/* 鼠标按下效果 */
+/* 添加边框和阴影 */
+  border: 2px solid #fff; /* 白色边框 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* 阴影效果 */
 }
 .replay-btn:hover {
-  background-color: #3a4a61;
-  transform: scale(1.1);
+  background-color: #3a4a61; /* 悬停时背景色 */
+  transform: scale(1.1); /* 悬停时放大 */
+}
+.replay-btn:active {
+  background-color: #2c3e50; /* 按下时背景色 */
+  transform: scale(0.95); /* 按下时缩小 */
 }
 .post-title {
   text-align: center;
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: 15px;
-  color: #333;
+  color: #27ae60;
   font-weight: bold;
 }
 .post-content {
-  font-size: 17.5px !important;
+  font-size: 17px !important;
   line-height: 1.5;
   color: #555;
   margin-bottom: 20px;
