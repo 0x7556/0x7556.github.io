@@ -94,35 +94,73 @@ a:hover {
 hr {
   border-color: #58606b;
 }
-.posts .replay-btn {
+.posts {
+  position: relative;
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f4f8, #e0e7ef); /* 渐变背景 */
+  border-radius: 12px; /* 圆角 */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* 更明显的阴影效果 */
+  margin: 20px auto; /* 外边距，自动水平居中 */
+  max-width: 800px; /* 设置最大宽度 */
+}
+.replay-btn {
   background-color: #4b5e7b;
-  width: 40px;
+  width: 45px;
   color: #fff;
-  height: 40px;
-  line-height: 40px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
-  border-radius: 100%;
+  border-radius: 50%; /* 圆形按钮 */
   position: absolute;
+  top: 20px; /* 调整位置 */
+  left: 20px; /* 调整位置 */
+  transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
 }
-.posts .post-title {
+.replay-btn:hover {
+  background-color: #3a4a61; /* 悬停时的背景色 */
+  transform: scale(1.1); /* 悬停时放大 */
+}
+.post-title {
   text-align: center;
-  font-size: 24px;
-  line-height: 40px;
-  margin-bottom: 10px;
+  font-size: 32px; /* 增大标题字体 */
+  line-height: 1.2; /* 行高 */
+  margin-bottom: 15px;
+  color: #333; /* 标题颜色 */
+  font-weight: bold; /* 加粗标题 */
 }
-.posts .post-content a {
-  color: #699be9;
+.post-content {
+  font-size: 18px; /* 内容字体大小 */
+  line-height: 1.8; /* 行高 */
+  color: #555; /* 内容颜色 */
+  margin-bottom: 20px; /* 内容底部间距 */
+  text-align: justify; /* 内容两端对齐 */
 }
-.posts .fhr {
-  margin-top: 20px;
+.post-content a {
+  color: #007bff; /* 链接颜色 */
+  text-decoration: none; /* 去掉下划线 */
+  transition: color 0.3s; /* 添加过渡效果 */
 }
-.posts .highlight .gutter .hljs {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.post-content a:hover {
+  color: #0056b3; /* 悬停时的链接颜色 */
+  text-decoration: underline; /* 悬停时添加下划线 */
 }
-.posts .highlight .code .hljs {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+.fhr {
+  margin-top: 30px; /* 增加分隔线的上边距 */
+  border: 1px solid #e0e0e0; /* 分隔线颜色 */
+}
+.highlight {
+  margin: 20px 0; /* 高亮代码块的上下间距 */
+  background-color: #f8f9fa; /* 高亮背景色 */
+  border-radius: 8px; /* 圆角 */
+  padding: 15px; /* 内边距 */
+}
+.highlight .gutter .hljs {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.highlight .code .hljs {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .post-content .octicon {
   display: inline-block;
