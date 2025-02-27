@@ -3,104 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>可爱螃蟹</title>
+    <title>紫色螃蟹</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f0f8ff;
+            height: 100vh; /* 使螃蟹垂直居中 */
+            background-color: #f0f0f0; /* 背景颜色 */
+            margin: 0;
         }
-
         .crab {
-            position: relative;
-            width: 200px;
-            height: 100px;
+            text-align: center;
+            font-size: 128px; /* 设置字体大小为 128px */
+            line-height: 1;
+            transition: transform 0.3s; /* 添加过渡效果 */
         }
-
-        .body {
-            background-color: #ff6347; /* 螃蟹的身体颜色 */
-            width: 100%;
-            height: 100%;
-            border-radius: 100px 100px 0 0; /* 圆角 */
-            position: absolute;
-            bottom: 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+        .crab:hover {
+            transform: scale(1.1); /* 鼠标悬停时放大 */
         }
-
         .claw {
-            background-color: #ff6347; /* 螃蟹的钳子颜色 */
-            width: 60px;
-            height: 30px;
-            border-radius: 30px;
-            position: absolute;
-            top: -15px; /* 让钳子在身体上方 */
+            color: #800080; /* 设置螃蟹钳子的颜色为紫色 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
         }
-
-        .left-claw {
-            left: -30px; /* 左钳子位置 */
-            transform: rotate(45deg); /* 旋转左钳子 */
-        }
-
-        .right-claw {
-            right: -30px; /* 右钳子位置 */
-            transform: rotate(-45deg); /* 旋转右钳子 */
-        }
-
-        .eye {
-            background-color: #fff; /* 眼睛的颜色 */
-            width: 30px;
-            height: 30px;
-            border-radius: 50%; /* 圆形 */
-            position: absolute;
-            top: 20px; /* 眼睛位置 */
-        }
-
-        .left-eye {
-            left: 40px; /* 左眼位置 */
-        }
-
-        .right-eye {
-            right: 40px; /* 右眼位置 */
-        }
-
-        .eye-ball {
-            background-color: #000; /* 眼球的颜色 */
-            width: 15px;
-            height: 15px;
-            border-radius: 50%; /* 圆形 */
-            position: absolute;
-            top: 7px; /* 眼球位置 */
-            left: 7px; /* 眼球位置 */
-        }
-
-        .smile {
-            position: absolute;
-            bottom: 20px; /* 笑容位置 */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 20px;
-            border: 5px solid #000; /* 笑容的颜色 */
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom: none; /* 去掉底部边框 */
+        .body {
+            color: #a040a0; /* 设置螃蟹身体的颜色为稍淡的紫色 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
         }
     </style>
 </head>
 <body>
     <div class="crab">
-        <div class="body"></div>
-        <div class="claw left-claw"></div>
-        <div class="claw right-claw"></div>
-        <div class="eye left-eye">
-            <div class="eye-ball"></div>
-        </div>
-        <div class="eye right-eye">
-            <div class="eye-ball"></div>
-        </div>
-        <div class="smile"></div>
+        <span class="claw">🦀</span>
+        <span class="body">🐚</span>
+        <span class="claw">🦀</span>
     </div>
 </body>
 </html>
