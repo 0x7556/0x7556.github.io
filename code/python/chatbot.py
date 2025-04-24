@@ -1,5 +1,8 @@
 import random
-
+### Author WebSite
+### http://18k.icu
+### https://blog.csdn.net/OneCrab
+### https://github.com/0x7556
 def chat_bot():
     print("你好！我是一个迷你聊天机器人。你可以问我任何问题！")
     print("如果你想结束聊天，可以输入 '退出' 或 '再见'。")

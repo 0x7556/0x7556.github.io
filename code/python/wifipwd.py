@@ -1,6 +1,9 @@
 import subprocess
 import re
-# www.18k.icu
+### Author WebSite
+### http://18k.icu
+### https://blog.csdn.net/OneCrab
+### https://github.com/0x7556
 def get_wifi_profiles():
     try:
         command = r"netsh wlan show profiles"

@@ -1,5 +1,8 @@
 import random
-
+### Author WebSite
+### http://18k.icu
+### https://blog.csdn.net/OneCrab
+### https://github.com/0x7556
 def guess_number():
     number_to_guess = random.randint(1, 100)
     attempts = 0

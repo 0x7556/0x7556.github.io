@@ -1,6 +1,9 @@
 import time
 import sys
-
+### Author WebSite
+### http://18k.icu
+### https://blog.csdn.net/OneCrab
+### https://github.com/0x7556
 def type_out(text, delay=0.1):
     for char in text:
         sys.stdout.write(char)

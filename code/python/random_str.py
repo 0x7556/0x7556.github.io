@@ -1,5 +1,8 @@
 import random
-
+### Author WebSite
+### http://18k.icu
+### https://blog.csdn.net/OneCrab
+### https://github.com/0x7556
 def random_quote():
     quotes = [
         "生活就像骑自行车。要保持平衡，你必须不断前进。 - 阿尔伯特·爱因斯坦",
